@@ -1,27 +1,135 @@
-#container {
-  text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+header {
+  div.info-area {
+    margin: 58px;
+    padding: 0 84px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+
+    div.info {
+      margin: 50px 0;
+      align-items: center;
+      width: 35%;
+
+      h1 {
+      font-size: 4.8em;
+      line-height: 1.2;
+      color: #1d1d1d;
+      font-weight: 700;
+      font-family: 'Mulish', sans-serif;
+      }
+
+      span {
+        color: #003C43;
+      }
+    }
+
+    p.info-subtext {
+      margin: 25px 0;
+      font-size: 1.2rem;
+      line-height: normal;
+    }
+
+
+    div.banner {
+      background-color: #d7e7b2;
+      border-radius: 40% 30% 0% 20%;
+      width: 40%;
+    }
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+
+section {
+
+div.psycho-area {
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+
+  h2 {
+    font-size: 45px;
+  }
+
+  div.our-team {
+    display: flex;
+    gap: 30px;
+  }
+
+  ion-card.psycho-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d7e7b2;
+    width: 325px;
+    height: 500px;
+    border-radius: 28px;
+    transition: transform .5s ease;
+
+    div.brain-img-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #a9b887;
+      position: relative;
+      left: 135px;
+      width: 70px;
+      height: 70px;
+      border-radius: 0px 37.5px 0px 42.5px;
+
+      img {
+        width: 40%;
+        height: 40%;
+      }
+    }
+
+    img.psycho-img {
+      position: relative;
+      bottom: 10px;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+
+
+    }
+
+  }
+
+  ion-card.psycho-card:hover {
+    transform: scale(1.05);
+
+  }
+
+
+  ion-card-header.psycho-desc {
+    padding: 10px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  div.rate-area {
+    margin: 10px 0;
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+
+    img.star-img {
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+
+
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
 
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
 }

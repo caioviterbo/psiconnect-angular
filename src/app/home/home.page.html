@@ -1,20 +1,63 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<header>
+  <div class="info-area">
+    <div class="info">
+      <h1>Sua jornada para o bem-estar mental <span>começa aqui.</span></h1>
+      <p class="info-subtext">
+        "Construímos um espaço seguro para cuidar da sua saúde mental,
+        oferecendo suporte profissional e soluções personalizadas para o seu
+        bem-estar emocional."
+      </p>
+    </div>
+    <div class="banner">
+      <img
+        alt="Silhouette of mountains"
+        src="/assets/imagens/bipolar-disorder-bro.svg"
+      />
+    </div>
   </div>
-</ion-content>
+</header>
+
+<section class="psychos">
+  <div class="psycho-area">
+    <h2>Psicólogos</h2>
+    <div class="our-team">
+      <ion-card class="psycho-card" *ngFor="let psycho of psicologos">
+        <div class="brain-img-area">
+          <img
+            class="braing-img"
+            alt="Foto do Psicólogo"
+            src="/assets/imagens/brain.svg"
+          />
+        </div>
+        <img
+          class="psycho-img"
+          alt="Foto do Psicólogo"
+          src="{{psycho.photo}}"
+        />
+        <ion-card-header class="psycho-desc">
+          <ion-card-title>{{psycho.name}}</ion-card-title>
+          <ion-card-subtitle>
+           {{psycho.description}}
+            </ion-card-subtitle
+          >
+        </ion-card-header>
+
+        <ion-card-content>
+          <div class="rate-area">
+            <img class="star-img" alt="estrela" src="/assets/imagens/star.svg" />
+            <p>({{psycho.rate}}+)</p>
+          </div>
+          <div class="price-area">
+            <p>R${{psycho.price}}</p>
+            <ion-button (click)="openModal(psycho)">Open</ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</section>
+<section>
+  <h1>aaaa</h1>
+</section>
+

@@ -1,3 +1,26 @@
+
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <nav>
+    <ion-toolbar>
+      <div class="header">
+        <ion-segment value="all">
+          <ion-segment-button value="all">
+            <a href="#">Inicio</a>
+          </ion-segment-button>
+          <ion-segment-button value="favorites">
+            <ion-label>Psicólogos</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="flex">
+            <a href="#">Especialidades</a>
+          </ion-segment-button>
+          <ion-segment-button value="flex">
+            <a href="#">Avaliações</a>
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+    </ion-toolbar>
+  </nav>
+  <main>
+    <ion-router-outlet></ion-router-outlet>
+  </main>
 </ion-app>
